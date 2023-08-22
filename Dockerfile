@@ -1,7 +1,7 @@
 FROM node:18
-WORKDIR /usr/src/app
+WORKDIR /src
 COPY package*.json ./
 RUN npm install
 COPY . .
-EXPOSE 80
+EXPOSE 80 3000
 CMD ["npm", "start"]
